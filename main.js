@@ -5,7 +5,7 @@ $(document).ready(function() {
         let items = document.querySelectorAll('.ul li');
         if(value){
             items.forEach((elem) => {
-                if(elem.innerText.search(value) == -1){
+                if(elem.innerText.toLowerCase().search(value.toLowerCase())){
                     elem.classList.add('hide');
                 }
             })
@@ -14,6 +14,9 @@ $(document).ready(function() {
                 elem.classList.remove('hide');
             })
         }
+    });
+    $('#add').bind('click', () => {
+        console.log("asd");
     })
 })
 /*
