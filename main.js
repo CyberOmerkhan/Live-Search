@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    let input = $('#input');
+    const input = $('#input'), btn = $('#btn'), add = $('#add');
     input.on('input', function() {
         let value = $(this).val();
         let items = document.querySelectorAll('.ul li');
@@ -15,24 +15,7 @@ $(document).ready(function() {
             })
         }
     });
-    $('#add').bind('click', () => {
+    $('#btn').bind('click', () => {
         console.log("asd");
     })
 })
-/*
-LiveSearch
-LiveSearch
-LiveSearch
-LiveSearch
-LiveSearch
-LiveSearch
-LiveSearch
-LiveSearch
-LiveSearch
-LiveSearch
-LiveSearch
-LiveSearch
-LiveSearch
-LiveSearch
-LiveSearch
-*/
