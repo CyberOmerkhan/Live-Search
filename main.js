@@ -1,5 +1,7 @@
 $(document).ready(function() {
     const input = $('#input'), btn = $('#btn'), add = $('#add');
+    let list = $('ol');
+    console.log(list);
     input.on('input', function() {
         let value = $(this).val();
         let items = document.querySelectorAll('.ul li');
@@ -17,7 +19,6 @@ $(document).ready(function() {
     });
     $('#btn').bind('click', () => {
         if(add.val()){
-            console.log(add.val());
             
         }
     })
