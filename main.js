@@ -1,23 +1,22 @@
 $(document).ready(function() {
     const input = $('#input'), btn = $('#btn'), add = $('#add');
     let list = $('ol');
-    console.log(list);
     input.on('input', function() {
         let value = $(this).val();
         let items = document.querySelectorAll('.ul li');
         if(value){
-            items.forEach((elem) => {
+            items.forEach(function(elem) {
                 if(elem.innerText.toLowerCase().search(value.toLowerCase())){
                     elem.classList.add('hide');
                 }
             })
         }else{
-            items.forEach(elem => {
+            items.forEach(function(elem) {
                 elem.classList.remove('hide');
             })
         }
     });
-    $('#btn').bind('click', () => {
+    $('#btn').bind('click', function() {
         if(add.val()){
             list.append(`<li>${add.val()}</li>`);
             add.val('');
