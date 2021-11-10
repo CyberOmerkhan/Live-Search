@@ -16,6 +16,9 @@ $(document).ready(function() {
         }
     });
     $('#btn').bind('click', () => {
-        console.log("asd");
+        if(add.val()){
+            console.log(add.val());
+            
+        }
     })
 })
