@@ -2,7 +2,7 @@ $(document).ready(function() {
     const input = $('#input');
     const btn = $('#btn');
     const add = $('#add');
-    let list = $('ol');
+    let list = $('ol'), counter = 8;
     input.on('input', function() {
         let value = $(this).val();
         let items = document.querySelectorAll('.ul li');
@@ -22,6 +22,10 @@ $(document).ready(function() {
         if(add.val()){
             list.append(`<li>${add.val()}</li>`);
             add.val('');
+            counter++;
+            console.log(counter);
+            $('#total').text(`Total: ${counter}`);
         }
-    })
+    });
+    $('#total').text(`Total: ${counter}`);
 })
