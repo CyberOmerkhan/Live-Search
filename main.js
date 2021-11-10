@@ -1,5 +1,7 @@
 $(document).ready(function() {
-    const input = $('#input'), btn = $('#btn'), add = $('#add');
+    const input = $('#input');
+    const btn = $('#btn');
+    const add = $('#add');
     let list = $('ol');
     input.on('input', function() {
         let value = $(this).val();
