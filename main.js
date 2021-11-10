@@ -19,7 +19,8 @@ $(document).ready(function() {
     });
     $('#btn').bind('click', () => {
         if(add.val()){
-            
+            list.append(`<li>${add.val()}</li>`);
+            add.val('');
         }
     })
 })

@@ -5,6 +5,9 @@
 body{
     background-color: lightslategray;
 }
+ol{
+    margin: 0 0 5% 0;
+}
 .hide{
     display: none;
 }
