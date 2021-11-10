@@ -1,4 +1,4 @@
-$(document).ready(() => {
+$(document).ready(function() {
     let input = $('#input');
     input.on('input', function() {
         let value = $(this).val();
